@@ -1,0 +1,49 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+}
+li img{
+    width: 8rem;
+    height: 12rem;
+}
+ul li a{
+    width: 20rem;
+    height: 21rem;
+    border: 1px solid rgba(162, 160, 160, 0.445);
+    background-color: rgba(220, 220, 220, 0.055);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0rem;
+    flex-direction: column;
+    margin: 0.5rem;
+    color: #000;
+}
+li a:hover{
+    opacity: 0.9;
+    cursor:pointer;
+}
+.shopping{
+    display: flex;
+    gap: 10px;
+}
+.content{
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+}
+.fav{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: red;
+}
+.fav.not{
+    color: #000;
+}

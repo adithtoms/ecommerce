@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<app-courosel></app-courosel>
+<div>{{user}}</div>
+<app-search></app-search>
+
+<div class="mt-5">
+  <ul>
+    <li *ngFor="let watch of watches">
+      <a routerLink="/watch/{{watch.id}}">
+        <img src="{{watch.imgurl}}" alt="watch item img">
+        <div class="content">
+          <h4 class="name">{{watch.name}}</h4>
+
+          <span class="fav {{watch.fav?'':'not'}}">&hearts;</span>
+          <div class="price">Price: <span style="color: rgb(2, 81, 81);">&#x20B9;{{watch.price}}</span></div>
+          <div class="shopping">
+            <button class="btn btn-warning">Add to Cart</button>
+            <button class="btn btn-danger">Buy</button>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+<app-about></app-about>

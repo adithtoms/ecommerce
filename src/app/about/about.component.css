@@ -1,0 +1,21 @@
+.about{
+    min-height: 60vh;
+    background-color: #101010;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 3rem ;
+    flex-wrap: wrap;
+}
+img{
+    width: 20rem;
+    height: 25rem;
+}
+.p{
+   width: 50rem;
+}
+p{
+    margin-top: 2rem;
+}

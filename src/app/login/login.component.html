@@ -1,0 +1,15 @@
+<div class="container w-25 bg-light text-center mt-5 p-5 rounded border">
+    <h1>Login</h1>
+    <form action="" [formGroup]="loginData" (ngSubmit)="login()">
+        <input formControlName="uname" type="text" class="form-control mt-5" placeholder="Username" name="uname1" id="uname1">
+        <p *ngIf="this.loginData.get('uname')?.errors && this.loginData.get('uname')?.touched" class="text-danger">invalid uname</p>
+
+        <input formControlName="pass" type="password" class="form-control mt-5" placeholder="Password" name="pass1" id="pass1">
+        <p *ngIf="this.loginData.get('pass')?.errors && this.loginData.get('pass')?.touched" class="text-danger">invalid password</p>
+
+        <button class="btn btn-success mt-5" type="submit">Login</button>
+
+    </form>
+    <p>Do not have a account? <a routerLink="/signup">SignUp</a></p>
+</div>
+
